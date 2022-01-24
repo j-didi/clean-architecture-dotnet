@@ -40,6 +40,10 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Load", "3 - Load", "{02BF31AA-76A8-48AA-93D5-E7941AB0BADD}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "results", "results", "{7BDA05CA-C75D-4663-AC36-4ED3491DF856}"
+	ProjectSection(SolutionItems) = preProject
+		tests\CleanArchDotnet.Tests.Load\k6\results\export.json = tests\CleanArchDotnet.Tests.Load\k6\results\export.json
+		tests\CleanArchDotnet.Tests.Load\k6\results\result.json = tests\CleanArchDotnet.Tests.Load\k6\results\result.json
+	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "use-cases", "use-cases", "{A021CE05-DF79-4E52-BC60-F1378A55C01F}"
 	ProjectSection(SolutionItems) = preProject
