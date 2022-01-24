@@ -1,0 +1,210 @@
+{
+    "root_group": {
+        "id": "d41d8cd98f00b204e9800998ecf8427e",
+        "groups": {
+            "create-todo": {
+                "name": "create-todo",
+                "path": "::create-todo",
+                "id": "dfd0e62096414c57e5099c6afe1462db",
+                "groups": {},
+                "checks": {
+                        "can create todo": {
+                            "name": "can create todo",
+                            "path": "::create-todo::can create todo",
+                            "id": "3b9a89c2bb772c0263b6e0f0ea3b030f",
+                            "passes": 10,
+                            "fails": 0
+                        },
+                        "can obtain todo id": {
+                            "id": "6e96cbb54c1cc07e56950461834e6fa7",
+                            "passes": 10,
+                            "fails": 0,
+                            "name": "can obtain todo id",
+                            "path": "::create-todo::can obtain todo id"
+                        }
+                    }
+            },
+            "get-todos": {
+                "path": "::get-todos",
+                "id": "654910c43bc843ee013159e26bc64fc2",
+                "groups": {},
+                "checks": {
+                        "can get todos": {
+                            "name": "can get todos",
+                            "path": "::get-todos::can get todos",
+                            "id": "2f64b498d449187bc0af640d83894c0e",
+                            "passes": 10,
+                            "fails": 0
+                        }
+                    },
+                "name": "get-todos"
+            },
+            "get-todo-by-id": {
+                "name": "get-todo-by-id",
+                "path": "::get-todo-by-id",
+                "id": "d413609cd9b0e792504e601d4fdb6d5d",
+                "groups": {},
+                "checks": {
+                        "can get todo by id": {
+                            "name": "can get todo by id",
+                            "path": "::get-todo-by-id::can get todo by id",
+                            "id": "dbf64d04bb756fbab0d7995372f6b7fa",
+                            "passes": 10,
+                            "fails": 0
+                        }
+                    }
+            },
+            "mark-todo-as-done": {
+                "groups": {},
+                "checks": {
+                        "can mark todo as done": {
+                            "id": "6452fca43c52a877c5c070028912121d",
+                            "passes": 10,
+                            "fails": 0,
+                            "name": "can mark todo as done",
+                            "path": "::mark-todo-as-done::can mark todo as done"
+                        }
+                    },
+                "name": "mark-todo-as-done",
+                "path": "::mark-todo-as-done",
+                "id": "74b970bbff959c038092edb2dd22abdc"
+            },
+            "delete-todo": {
+                "name": "delete-todo",
+                "path": "::delete-todo",
+                "id": "eaea63332f24851dcc59a417ac4233df",
+                "groups": {},
+                "checks": {
+                        "can delete todo": {
+                            "name": "can delete todo",
+                            "path": "::delete-todo::can delete todo",
+                            "id": "c33996e05357272ebeea966700249e7d",
+                            "passes": 10,
+                            "fails": 0
+                        }
+                    }
+            }
+        },
+        "checks": {},
+        "name": "",
+        "path": ""
+    },
+    "metrics": {
+        "http_req_blocked": {
+            "p(90)": 4.777164900000001,
+            "p(95)": 4.79985515,
+            "avg": 0.9563361000000001,
+            "min": 0.001984,
+            "med": 0.0034315,
+            "max": 4.896046
+        },
+        "http_req_connecting": {
+            "p(95)": 3.3612572,
+            "avg": 0.6668819400000001,
+            "min": 0,
+            "med": 0,
+            "max": 3.422921,
+            "p(90)": 3.3458536000000003
+        },
+        "http_req_failed": {
+            "passes": 0,
+            "fails": 50,
+            "value": 0
+        },
+        "http_req_sending": {
+            "avg": 0.023555920000000004,
+            "min": 0.006291,
+            "med": 0.012213,
+            "max": 0.174838,
+            "p(90)": 0.0572206,
+            "p(95)": 0.07182654999999996
+        },
+        "checks": {
+            "passes": 60,
+            "fails": 0,
+            "value": 1
+        },
+        "http_req_tls_handshaking": {
+            "min": 0,
+            "med": 0,
+            "max": 0,
+            "p(90)": 0,
+            "p(95)": 0,
+            "avg": 0
+        },
+        "http_req_receiving": {
+            "max": 1.07718,
+            "p(90)": 0.8242440000000001,
+            "p(95)": 0.9221153999999998,
+            "avg": 0.1708514,
+            "min": 0.011953,
+            "med": 0.030292
+        },
+        "data_sent": {
+            "count": 7090,
+            "rate": 1398.5294142080422
+        },
+        "http_req_waiting": {
+            "p(90)": 20.120626,
+            "p(95)": 20.464154349999998,
+            "avg": 11.738176000000001,
+            "min": 4.026788,
+            "med": 12.02533,
+            "max": 20.727482
+        },
+        "http_req_duration": {
+            "max": 20.756597,
+            "p(90)": 20.1666849,
+            "p(95)": 20.4940003,
+            "avg": 11.932583319999997,
+            "min": 4.100286,
+            "med": 12.13663
+        },
+        "vus_max": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "group_duration": {
+            "avg": 1013.6404101799998,
+            "min": 1004.757026,
+            "med": 1016.8335975,
+            "max": 1021.365723,
+            "p(90)": 1021.120814,
+            "p(95)": 1021.2953175
+        },
+        "data_received": {
+            "count": 43660,
+            "rate": 8612.100736857987
+        },
+        "http_reqs": {
+            "count": 50,
+            "rate": 9.862689804005939
+        },
+        "http_req_duration{expected_response:true}": {
+            "min": 4.100286,
+            "med": 12.13663,
+            "max": 20.756597,
+            "p(90)": 20.1666849,
+            "p(95)": 20.4940003,
+            "avg": 11.932583319999997
+        },
+        "vus": {
+            "value": 10,
+            "min": 10,
+            "max": 10
+        },
+        "iteration_duration": {
+            "avg": 5068.336136399999,
+            "min": 5067.260762,
+            "med": 5068.4556155,
+            "max": 5068.509931,
+            "p(90)": 5068.5089995,
+            "p(95)": 5068.50946525
+        },
+        "iterations": {
+            "count": 10,
+            "rate": 1.972537960801188
+        }
+    }
+}

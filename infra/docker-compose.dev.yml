@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  cleanarchdotnet.api:
+    container_name: todo-api-dev
+    ports:
+      - "5010:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+  
+  database:
+    container_name: todo-database-dev
+    ports:
+      - "5435:5432"

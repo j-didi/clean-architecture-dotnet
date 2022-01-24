@@ -1,0 +1,18 @@
+version: '3.4'
+
+services:
+  cleanarchdotnet.api:
+    container_name: todo-api
+    image: ${DOCKER_REGISTRY-}api
+    build:
+      context: ../
+      dockerfile: src/CleanArchDotnet.API/Dockerfile
+    depends_on: [database]
+    
+  database:
+    container_name: todo-database
+    image: postgres
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: X@bLVUv7bKH=xy
+  

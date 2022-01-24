@@ -1,0 +1,28 @@
+version: '3.4'
+
+services:
+  cleanarchdotnet.api:
+    container_name: todo-api-test
+    ports:
+      - "5011:80"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Test
+  
+  database:
+    container_name: test-todo-database
+    ports:
+      - "5436:5432"
+
+  k6:
+    container_name: test-todo-k6
+    image: loadimpact/k6:latest
+    ports:
+      - "6565:6565"
+    environment:
+      - K6_OUT=json=/scripts/results/result.json
+      - K6_SUMMARY_EXPORT=/scripts/results/export.json
+    volumes:
+      - ../tests/CleanArchDotnet.Tests.Load/k6:/scripts
+    depends_on: 
+      - cleanarchdotnet.api
+    command: run --summary-export /scripts/results/export.json /scripts/use-cases/todo.js

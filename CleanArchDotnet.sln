@@ -1,0 +1,134 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32112.339
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - src", "0 - src", "{C90250B6-BE0E-4CA8-B5E1-B3629DA086B8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - tests", "1 - tests", "{8736AE33-C562-4240-AE9A-40E9DB7E8DB2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Services", "0 - Services", "{8660C436-BD5B-466E-BE67-AC1C9904B013}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Core", "1 - Core", "{0A005B86-D84C-4F36-8BDE-CE5C9FC4F6CD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - Infra", "2 - Infra", "{0A4339B6-4579-4B8E-87D5-53ADFC941D3A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - SharedKernel", "3 - SharedKernel", "{F3CB7A39-84DC-4111-8E1C-B299F7F637E8}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0 - Unit", "0 - Unit", "{2ED5ACE8-9740-4FB4-B7DB-7D1A4B276CB5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1 - Integration", "1 - Integration", "{0E50F8E0-7253-4585-93E3-8810A513525D}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchDotnet.SharedKernel", "src\CleanArchDotnet.SharedKernel\CleanArchDotnet.SharedKernel.csproj", "{5EA77359-A179-4A90-B08E-7345E5FDABE1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchDotnet.Core", "src\CleanArchDotnet.Core\CleanArchDotnet.Core.csproj", "{9DD704D1-7CA9-44F2-A5B1-69D85FB6880B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchDotnet.Infra", "src\CleanArchDotnet.Infra\CleanArchDotnet.Infra.csproj", "{A41D55F4-4857-4686-A839-7AA1F890F983}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchDotnet.API", "src\CleanArchDotnet.API\CleanArchDotnet.API.csproj", "{266E98ED-A3C2-4101-978E-E18161282F33}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchDotnet.Tests.Unit", "tests\CleanArchDotnet.Tests.Unit\CleanArchDotnet.Tests.Unit.csproj", "{36A49E2F-E815-49E4-9A90-2AE6C3E2BFD5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CleanArchDotnet.Tests.Integration", "tests\CleanArchDotnet.Tests.Integration\CleanArchDotnet.Tests.Integration.csproj", "{F45B3E2F-663B-4F56-83B0-3F68C4BF55B7}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "infra/docker-compose.dcproj", "{5DEB863A-9970-440B-8537-229CAD593012}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - EndToEnd", "2 - EndToEnd", "{B1E7B6C2-8C60-46FF-BAEE-512D1789082C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CleanArchDotnet.Tests.EndToEnd", "tests\CleanArchDotnet.Tests.EndToEnd\CleanArchDotnet.Tests.EndToEnd.csproj", "{1CA770D1-E48D-4DC4-A8D1-79C6DE637735}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - Load", "3 - Load", "{02BF31AA-76A8-48AA-93D5-E7941AB0BADD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "results", "results", "{7BDA05CA-C75D-4663-AC36-4ED3491DF856}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "use-cases", "use-cases", "{A021CE05-DF79-4E52-BC60-F1378A55C01F}"
+	ProjectSection(SolutionItems) = preProject
+		tests\CleanArchDotnet.Tests.Load\k6\use-cases\create-todo.js = tests\CleanArchDotnet.Tests.Load\k6\use-cases\create-todo.js
+		tests\CleanArchDotnet.Tests.Load\k6\use-cases\delete-todo.js = tests\CleanArchDotnet.Tests.Load\k6\use-cases\delete-todo.js
+		tests\CleanArchDotnet.Tests.Load\k6\use-cases\get-todo-by-id.js = tests\CleanArchDotnet.Tests.Load\k6\use-cases\get-todo-by-id.js
+		tests\CleanArchDotnet.Tests.Load\k6\use-cases\get-todos.js = tests\CleanArchDotnet.Tests.Load\k6\use-cases\get-todos.js
+		tests\CleanArchDotnet.Tests.Load\k6\use-cases\mark-todo-as-done.js = tests\CleanArchDotnet.Tests.Load\k6\use-cases\mark-todo-as-done.js
+		tests\CleanArchDotnet.Tests.Load\k6\use-cases\todo.js = tests\CleanArchDotnet.Tests.Load\k6\use-cases\todo.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "3 - resources", "3 - resources", "{672B1F93-5EC7-448F-ADB6-D451EDF289F5}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2 - infra", "2 - infra", "{4AC33B52-7463-4788-9EEC-C757AF1E479D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{55D4152E-9541-45DC-A7BE-98F96537E296}"
+	ProjectSection(SolutionItems) = preProject
+		resources\images\CleanArchitecture.jpg = resources\images\CleanArchitecture.jpg
+		resources\images\ScreamingArchitectureStructure.png = resources\images\ScreamingArchitectureStructure.png
+		resources\images\Dependencies.png = resources\images\Dependencies.png
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5EA77359-A179-4A90-B08E-7345E5FDABE1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EA77359-A179-4A90-B08E-7345E5FDABE1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EA77359-A179-4A90-B08E-7345E5FDABE1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EA77359-A179-4A90-B08E-7345E5FDABE1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DD704D1-7CA9-44F2-A5B1-69D85FB6880B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DD704D1-7CA9-44F2-A5B1-69D85FB6880B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DD704D1-7CA9-44F2-A5B1-69D85FB6880B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DD704D1-7CA9-44F2-A5B1-69D85FB6880B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A41D55F4-4857-4686-A839-7AA1F890F983}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A41D55F4-4857-4686-A839-7AA1F890F983}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A41D55F4-4857-4686-A839-7AA1F890F983}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A41D55F4-4857-4686-A839-7AA1F890F983}.Release|Any CPU.Build.0 = Release|Any CPU
+		{266E98ED-A3C2-4101-978E-E18161282F33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{266E98ED-A3C2-4101-978E-E18161282F33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{266E98ED-A3C2-4101-978E-E18161282F33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{266E98ED-A3C2-4101-978E-E18161282F33}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36A49E2F-E815-49E4-9A90-2AE6C3E2BFD5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36A49E2F-E815-49E4-9A90-2AE6C3E2BFD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36A49E2F-E815-49E4-9A90-2AE6C3E2BFD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36A49E2F-E815-49E4-9A90-2AE6C3E2BFD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F45B3E2F-663B-4F56-83B0-3F68C4BF55B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F45B3E2F-663B-4F56-83B0-3F68C4BF55B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F45B3E2F-663B-4F56-83B0-3F68C4BF55B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F45B3E2F-663B-4F56-83B0-3F68C4BF55B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DEB863A-9970-440B-8537-229CAD593012}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DEB863A-9970-440B-8537-229CAD593012}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DEB863A-9970-440B-8537-229CAD593012}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DEB863A-9970-440B-8537-229CAD593012}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CA770D1-E48D-4DC4-A8D1-79C6DE637735}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CA770D1-E48D-4DC4-A8D1-79C6DE637735}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CA770D1-E48D-4DC4-A8D1-79C6DE637735}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CA770D1-E48D-4DC4-A8D1-79C6DE637735}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8660C436-BD5B-466E-BE67-AC1C9904B013} = {C90250B6-BE0E-4CA8-B5E1-B3629DA086B8}
+		{0A005B86-D84C-4F36-8BDE-CE5C9FC4F6CD} = {C90250B6-BE0E-4CA8-B5E1-B3629DA086B8}
+		{0A4339B6-4579-4B8E-87D5-53ADFC941D3A} = {C90250B6-BE0E-4CA8-B5E1-B3629DA086B8}
+		{F3CB7A39-84DC-4111-8E1C-B299F7F637E8} = {C90250B6-BE0E-4CA8-B5E1-B3629DA086B8}
+		{2ED5ACE8-9740-4FB4-B7DB-7D1A4B276CB5} = {8736AE33-C562-4240-AE9A-40E9DB7E8DB2}
+		{0E50F8E0-7253-4585-93E3-8810A513525D} = {8736AE33-C562-4240-AE9A-40E9DB7E8DB2}
+		{5EA77359-A179-4A90-B08E-7345E5FDABE1} = {F3CB7A39-84DC-4111-8E1C-B299F7F637E8}
+		{9DD704D1-7CA9-44F2-A5B1-69D85FB6880B} = {0A005B86-D84C-4F36-8BDE-CE5C9FC4F6CD}
+		{A41D55F4-4857-4686-A839-7AA1F890F983} = {0A4339B6-4579-4B8E-87D5-53ADFC941D3A}
+		{266E98ED-A3C2-4101-978E-E18161282F33} = {8660C436-BD5B-466E-BE67-AC1C9904B013}
+		{36A49E2F-E815-49E4-9A90-2AE6C3E2BFD5} = {2ED5ACE8-9740-4FB4-B7DB-7D1A4B276CB5}
+		{F45B3E2F-663B-4F56-83B0-3F68C4BF55B7} = {0E50F8E0-7253-4585-93E3-8810A513525D}
+		{B1E7B6C2-8C60-46FF-BAEE-512D1789082C} = {8736AE33-C562-4240-AE9A-40E9DB7E8DB2}
+		{1CA770D1-E48D-4DC4-A8D1-79C6DE637735} = {B1E7B6C2-8C60-46FF-BAEE-512D1789082C}
+		{02BF31AA-76A8-48AA-93D5-E7941AB0BADD} = {8736AE33-C562-4240-AE9A-40E9DB7E8DB2}
+		{7BDA05CA-C75D-4663-AC36-4ED3491DF856} = {02BF31AA-76A8-48AA-93D5-E7941AB0BADD}
+		{A021CE05-DF79-4E52-BC60-F1378A55C01F} = {02BF31AA-76A8-48AA-93D5-E7941AB0BADD}
+		{5DEB863A-9970-440B-8537-229CAD593012} = {4AC33B52-7463-4788-9EEC-C757AF1E479D}
+		{55D4152E-9541-45DC-A7BE-98F96537E296} = {672B1F93-5EC7-448F-ADB6-D451EDF289F5}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {43AFD1A5-0AE8-486D-A626-54279D8FFC75}
+	EndGlobalSection
+EndGlobal
